@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodMunch Website</title>
+   <link rel="stylesheet" href="style.css">  
+      <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script src="script.js"></script>
+
+</head>
+<body>
+    <section>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+  <!-- LOGO -->
+  <a class="navbar-brand" href="#">
+    <img src="images/logo.jpg" class="logo-image">
+  </a>
+
+  <!-- HAMBURGER BUTTON -->
+  <button id="menuBtn" class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navbarNav">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </button>
+
+  <!-- MENU -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a href="#home-section"  class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="#why-section"  class="nav-link">Why FoodMunch?</a></li>
+      <li class="nav-item"><a href="#menu-section"  class="nav-link">Menu</a></li>
+      <li class="nav-item"><a href="#payment-section"  class="nav-link">Payments & Delivery</a></li>
+      <li class="nav-item"><a href="#follow-section"  class="nav-link">Follow Us</a></li>
+      
+    </ul>
+  </div>
+
+</nav>
+    </section>
+
+
+        <section class="home-section" id="home-section">
+    <div class="home-container">
+        <h1 class="home-title">Delicious Food Anytime !</h1>
+        <p class="home-subtitle">Eat Smart & Healthy</p>
+
+      <div class="mt-5 home-buttons">
+    <a href="#menu-section" class="btn btn-warning mr-3">View Menu</a>
+    <a href="#order" class="btn btn-outline-light">Order Now</a>
+</div>
+    </div>
+</section>
+
+ <!-- WHY SECTION -->
+  <section class="why-us-section" id="why-section">
+    <div class="why-container">
+       <h2 class="why-title">Why Choose Us?</h2>
+        <p class="why-description">
+            We use both original recipes and classic versions of famous food items.
+        </p>
+<div class="why-grid">
+   <div class="why-box">
+                <img src="images/FoodService.jpg" alt="Food Service">
+                <h3>Food Service</h3>
+                <p>
+                    Experience fine dining at the comfort of your home. All our orders are carefully packed 
+                    and arranged to give you nothing less than perfect.
+                </p>
+            </div>
+
+ <div class="why-box">
+                <img src="images/FreshFood.png" alt="Fresh Food">
+                <h3>Fresh Food</h3>
+                <p>
+                    Fresh-cut fruits and vegetables directly picked from farms so that you always get them 
+                    tree to plate.
+                </p>
+            </div>
+
+            <div class="why-box">
+                <img src="images/bestOffer.jpg" alt="Best Offers">
+                <h3>Best Offers</h3>
+                <p>
+                    Food coupons & offers up to 50% OFF and exclusive promo codes on all online orders.
+                </p>
+            </div>
+
+            <div class="why-box">
+    <img src="images/CustomerSupport.jpg" alt="24/7 Support">
+    <h3>24/7 Support</h3>
+    <p>
+        Our team is always available to assist you with your orders and ensure a smooth experience anytime.
+    </p>
+</div>
+<div class="why-box">
+    <img src="images/HygienicCooking.jpg" alt="Hygienic Cooking">
+    <h3>Hygienic Cooking</h3>
+    <p>
+        We maintain the highest standards of hygiene in our kitchens to ensure safe and healthy food.
+    </p>
+</div>
+
+<div class="why-box">
+    <img src="images/FastDelivery.jpg" alt="Fast Delivery">
+    <h3>Fast Delivery</h3>
+    <p>
+        Get your favorite meals delivered quickly at your doorstep with our super-fast delivery system.
+    </p>
+</div>
+
+
+</div>
+
+    </div>
+  </section>
+
+<section class="menu-section" id="menu-section">
+
+    <div class="menu-container">
+
+        <h2 class="menu-title">Explore Menu</h2>
+
+        <div class="menu-grid" id="menuGrid">
+
+            <!-- CARD 1 -->
+            <div class="menu-card">
+                <img src="images/biryani.jpg" class="image">
+                <div class="menu-content">
+                    <h3>Chicken Biryani</h3>
+                    <p>Spicy and delicious.</p>
+                    <span class="price">₹199</span>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="menu-card">
+                <img src="images/VegPizza.jpg" class="image">
+                <div class="menu-content">
+                    <h3>Veg Pizza</h3>
+                    <p>Cheesy delight.</p>
+                    <span class="price">₹149</span>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="menu-card">
+                <img src="images/burger.jpg" class="image">
+                <div class="menu-content">
+                    <h3>Burger</h3>
+                    <p>Juicy and tasty.</p>
+                    <span class="price">₹99</span>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="menu-card">
+                <img src="images/Noodles.jpg" class="image">
+                <div class="menu-content">
+                    <h3>Noodles</h3>
+                    <p>Hot and spicy.</p>
+                    <span class="price">₹129</span>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="menu-card">
+                <img src="images/friedrice.jpg" class="image">
+                <div class="menu-content">
+                    <h3>Fried Rice</h3>
+                    <p>Delicious and flavorful.</p>
+                    <span class="price">₹139</span>
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="menu-card">
+                <img src="images/pasta.jpg">
+                <div class="menu-content">
+                    <h3>Pasta</h3>
+                    <p>Italian creamy pasta.</p>
+                    <span class="price">₹159</span>
+                </div>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="menu-card">
+                <img src="images/sandwich.jpg">
+                <div class="menu-content">
+                    <h3>Sandwich</h3>
+                    <p>Healthy and fresh.</p>
+                    <span class="price">₹89</span>
+                </div>
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="menu-card">
+                <img src="images/French-Fries.jpg">
+                <div class="menu-content">
+                    <h3>French Fries</h3>
+                    <p>Crispy and golden.</p>
+                    <span class="price">₹79</span>
+                </div>
+            </div>
+
+            <!-- CARD 9 -->
+            <div class="menu-card">
+                <img src="images/dosa.jpg">
+                <div class="menu-content">
+                    <h3>Dosa</h3>
+                    <p>South Indian special.</p>
+                    <span class="price">₹99</span>
+                </div>
+            </div>
+
+            <!-- CARD 10 -->
+            <div class="menu-card">
+                <img src="images/ice-cream.jpg">
+                <div class="menu-content">
+                    <h3>Ice Cream</h3>
+                    <p>Sweet dessert.</p>
+                    <span class="price">₹59</span>
+                </div>
+            </div>
+
+            <!-- CARD 11 -->
+            <div class="menu-card">
+                <img src="images/FreshJuice.jpg">
+                <div class="menu-content">
+                    <h3>Fresh Juice</h3>
+                    <p>Healthy drink.</p>
+                    <span class="price">₹69</span>
+                </div>
+            </div>
+
+            <!-- CARD 12 -->
+            <div class="menu-card">
+                <img src="images/cake.jpg">
+                <div class="menu-content">
+                    <h3>Cake</h3>
+                    <p>Soft and delicious.</p>
+                    <span class="price">₹119</span>
+                </div>
+            </div>
+
+        </div>
+
+        <button id="loadMoreBtn">Load More</button>
+
+    </div>
+
+</section>
+
+<section class="payment-section" id="payment-section">
+
+    <div class="payment-container">
+
+        <h2 class="payment-title">Payments & Delivery</h2>
+        <p class="payment-subtitle">
+            Choose your preferred payment method and enjoy fast delivery at your doorstep.
+        </p>
+
+        <div class="payment-grid">
+
+            <!-- PAYMENT METHODS -->
+            <div class="payment-box">
+                <h3>Payment Methods</h3>
+                <div class="payment-icons">
+                    <i class="fas fa-credit-card"></i>
+                    <i class="fas fa-wallet"></i>
+                    <i class="fas fa-mobile-alt"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <p>We accept cards, UPI, wallets, and cash on delivery.</p>
+            </div>
+
+            <!-- DELIVERY INFO -->
+            <div class="payment-box">
+                <h3>Fast Delivery</h3>
+                <p>
+                    Get your food delivered within 30 minutes. Our delivery system ensures
+                    quick and safe delivery every time.
+                </p>
+            </div>
+
+            <!-- TRACK ORDER -->
+            <div class="payment-box">
+                <h3>Order Tracking</h3>
+                <p>
+                    Track your order in real-time and know exactly when your food will arrive.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Follow Section -->
+ <section class="follow-section" id="follow-section">
+
+    <div class="follow-container">
+
+        <h2 class="follow-title">Follow Us</h2>
+        <p class="follow-subtitle">Stay connected with us on social media</p>
+
+        <div class="social-icons">
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer-section">
+
+    <div class="footer-container">
+
+        <!-- COLUMN 1 (LOGO + BRAND) -->
+        <div class="footer-box footer-brand">
+            
+            <img src="images/logo.jpg" class="footer-logo" alt="FoodMunch Logo">
+            
+            <div>
+                <h3>FoodMunch</h3>
+                <p>Delicious food delivered to your doorstep. Eat fresh & stay healthy.</p>
+            </div>
+
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+           <ul>
+    <li><a href="#home-section"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="#why-section"><i class="fas fa-circle-info"></i> Why Us</a></li>
+    <li><a href="#menu-section"><i class="fas fa-utensils"></i> Menu</a></li>
+    <li><a href="#follow-section"><i class="fas fa-share-alt"></i> Follow</a></li>
+</ul>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p><i class="fas fa-envelope"></i> foodmunch@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91 9876543210</p>
+            <p><i class="fas fa-map-marker-alt"></i> India</p>
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+        <p>© 2026 FoodMunch. All rights reserved.</p>
+    </div>
+
+</footer>
+</body>
+</html>
