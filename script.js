@@ -57,7 +57,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const cards = document.querySelectorAll(".menu-card");
 const loadBtn = document.getElementById("loadMoreBtn");
 
-let visible = 6;
+let visible = 8;
 
 if (cards.length && loadBtn) {
 
